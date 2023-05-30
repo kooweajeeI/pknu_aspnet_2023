@@ -45,6 +45,45 @@ ASP.NET Core MVC 게시판
 <img src="https://raw.githubusercontent.com/kooweajeeI/pknu_aspnet_2023/main/images/aspnet04.gif" width="700">	
 
 ## 6일차
-- ASP.NET MVC
+- ASP.NET MVC	
 	- 게시판 정리
-	- 계정관리 추가
+	- 계정관리(회원가입, 로그인)
+	
+<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/aspnet05.gif?raw=true" width="700">
+
+## 7일차
+- ASP.NET Core MVC
+	- 게시판 정리
+		- 아이디 삭제
+		- 게시판 번호
+	- 계정 및 권한관리
+		- 사용자별 권한 할당
+		- 관리자, 사용자 분리
+		- 관리자 게시판글 모두 삭제 가능
+		- 프로필 수정
+	
+## 8일차
+- ASP.NET Core MVC
+	- 부트스트랩 테마(SEO Dream)적용
+	
+<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/aspnet06.gif?raw=true" width="700">
+	
+## 9일차
+- ASP.NET Core MVC
+   - SER Dream 테마 완료
+      - 스트롤이 되는 화면, 안되는 화면 메뉴 분리
+      - 포트폴리오 동적관리(이미지 업로드)
+	  - IIS .net 6.0 런타임 설치
+	  
+   - 다른 Bootstrap 테마적용
+- ASP.NET RestAPI
+   - OpenAPL같은 서비스를 운영
+   - RestAPI Server
+   - WPF Cilent
+   
+## 10일차
+- ASP.NET RestAPI
+	- RestAPI Server
+	- WPF Client
+- 개인 포트폴리오 웹
+	- 부트스트랩 테마 재적용
