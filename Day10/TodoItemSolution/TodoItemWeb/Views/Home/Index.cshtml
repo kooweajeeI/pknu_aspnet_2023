@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "할일 리스트";
+}
+
+<div class="text-center">
+    <div class="main-content">
+        <h1 class="display-4">할일 리스트</h1>
+        <ul id="todoItems"></ul>
+    </div>
+    <div>
+         <!-- 특징, form 태그도 없고 submit 버튼도 없음-->
+         <label for="Id">Id</label>
+         <input type="text" id="Id" />
+         <input type="button" value="Search" id="btnSearch" />
+         <p id="todoItem"></p>
+    </div>
+    <!-- 새 할일 추가영역 -->
+    <div>
+        <label for="Title">타이틀</label>
+        <input type="text" id="Title" />
+        <label for="IsComplete">완료여부</label>
+        <select id="IsComplete">
+            <option value="1">true</option>
+            <option value="0">false</option>
+
+        </select><br />
+        <input type="button" value="Insert" id="btnInsert"/>
+        <p id="result"></p>
+    </div>
+</div>
