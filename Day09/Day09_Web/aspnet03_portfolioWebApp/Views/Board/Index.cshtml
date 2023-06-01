@@ -1,0 +1,185 @@
+﻿@model IEnumerable<aspnet02_boardapp.Models.Board>
+
+@{
+    // 뷰백 (하나의 딕셔너리임)
+    ViewData["Title"] = "게시판"; //@는 전부 Razor 문법(C#으로 된)
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+@*@if (TempData["succeed"] != null)
+{
+    <h4>@TempData["succeed"]</h4>
+}*@
+
+@{
+    // HTML 화면에서 데이터를 사용하기 위해 만든 것으로 ViewData, TempData와 동일한 역할
+    var startPage = ViewBag.StartPage;
+    var endPage = ViewBag.EndPage;
+    var page = ViewBag.Page;
+    var totalPage = ViewBag.TotalPage;
+    var startCount = ViewBag.StartCount; // 230525. 게시판 번호를 위해 추가
+    int boardNum = startCount; // 1, 11, 21, ...
+
+}
+
+<!-- Shared밑에 있는 _Notification.cshtml을 index.cshtml에 포함 -->
+<partial name="_Notification" />
+
+@*<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+
+
+
+<div style="padding : 50px" class="mt-4">
+
+    <div class="container p-3">
+        <div class="row pt-4">
+            <div class="col-8">
+                <h3 class="text-primary">게시판 리스트</h3>
+            </div>
+
+            <div class="col-4 text-end">
+                @if (signInManager.IsSignedIn(User))
+                {
+                    <a asp-controller="Board" asp-action="Create" class="btn btn-primary">
+                        <i class="bi bi-file-earmark-plus-fill"></i>&nbsp 새 게시글
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    번호
+                </th>
+                @*<th> 아이디와 이름이 동일하기 때문에 아이디는 주석처리함
+                @Html.DisplayNameFor(model => model.UserId)
+                </th>*@
+                <th>
+                    @Html.DisplayNameFor(model => model.UserName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ReadCount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PostDate)
+                </th>
+                @*
+                <th> 글 상세 들어가면 글 보이게 설정하기 위해 내용은 주석처리 함
+                @Html.DisplayNameFor(model => model.Contents)
+                </th>
+                *@
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @boardNum
+                    </td>
+                    @*<td>
+                @Html.DisplayFor(modelItem => item.UserId)
+                </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserName)
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.Id"
+                           class="link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-50-hover">
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ReadCount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PostDate)
+                    </td>
+                    @*
+                <td>
+                @Html.DisplayFor(modelItem => item.Contents)
+                </td>
+                *@
+                    <td>
+                        @*<a asp-controller="Board" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |*@
+                        @*<a asp-action="Details" asp-route-id="@item.Id">Details</a> |*@
+                        @if (signInManager.IsSignedIn(User) && (item.UserName == User.Identity.Name) || User.IsInRole("Admin"))
+                        {
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn sm btn-warning">
+                                <i class="bi bi-trash3"></i> &nbsp; 삭제
+                            </a>
+                        }
+
+                    </td>
+                </tr>
+                boardNum++;
+                <!-- 화면에 보이게 하기 위해서는 '골뱅이'를 사용함-->
+            }
+        </tbody>
+    </table>
+
+    <!-- 페이징 추가-->
+    <div class="container">
+        <nav>
+            <ul class="pagination justify-content-center">
+                @if (page > 1) // 바로 앞 페이지로 이동
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="?page=@(page-1)">Prev</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="page-item disabled">
+                        <a class="page-link" href="?page=@(page-1)">Prev</a>
+                    </li>
+                }
+
+                @*반복문 1~n페이지까지 페이지 번호 넣기*@
+
+                @for (var icount = startPage; icount <= endPage; icount++)
+                {
+                    if (icount == page)
+                    {
+                        @*현재페이지*@
+                        <li class="page-item">
+                            <a class="page-link" href="?page=@icount">@icount</a>
+                        </li>
+
+                    }
+                    else
+                    {
+                        @*그 외 페이지*@
+                        <li class="page-item">
+                            <a class="page-link" href="?page=@icount">@icount</a>
+                        </li>
+                    }
+                }
+
+                @if (page < totalPage) // 다음 페이지로
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="?page=@(page+1)">Next</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="page-item disabled">
+                        <a class="page-link" href="?page=@(page+1)">Next</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </div>
+</div>

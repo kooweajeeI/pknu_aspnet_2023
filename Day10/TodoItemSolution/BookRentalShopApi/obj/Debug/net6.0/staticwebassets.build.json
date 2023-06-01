@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bpia8vtYzcjvQRFOvPaltXI31X4z/tlblvgM4pM+9vk=",
+  "Source": "BookRentalShopApi",
+  "BasePath": "_content/BookRentalShopApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
