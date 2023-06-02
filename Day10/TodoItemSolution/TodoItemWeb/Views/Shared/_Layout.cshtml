@@ -11,6 +11,10 @@
 
     <script>
         $(document).ready(() => {
+            var getData = function() {
+                // ul에 전체 아이템 삭제
+                $('#todoItems').children().remove();
+
             $.getJSON("https://localhost:7084/api/TodoItems/", function (data) {
                 $.each(data, function (key, val) {
                     // 텍스트출력을 위해 형식변환
@@ -19,7 +23,9 @@
                     $('<li/>', { text: str }).appendTo('#todoItems');
                 });
             });
+            }
 
+            getData();
             // ID로 조회
             $('#btnSearch').click(function () {
                 var id = $('#Id').val();
@@ -44,10 +50,19 @@
             $('#btnInsert').click(function (event) {
                 event.preventDefault();     // 폼 제출방지(예방차원)
 
+                // 현재 시간
+                var curDate = new Date();
+                var dateStr = curDate.getFullYear() + '-' +
+                    ('0' + (curDate.getMonth() + 1)).slice(-2) + '-' +
+                    ('0' + curDate.getDate()).slice(-2) + ' ' +
+                    ('0' + curDate.getHours()).slice(-2) + ':' +
+                    ('0' + curDate.getMinutes()).slice(-2) + ':' +
+                    ('0' + curDate.getSeconds()).slice(-2);
+
                 var data = {
                     'id': 0,
                     "title": $("#Title").val(),
-                    "todoDate": "2023-05-31T03:10:55.656",
+                    "todoDate": dateStr,
                     "isComplete": $("#IsComplete option:selected").val()
                 };
 
@@ -66,8 +81,29 @@
                         if (id != 0) {
                             $('#result').text('한 건 추가되었습니다.');
                         }
+
+                        getData();
+                    },
+                    error: function(request, status, error) {
+                        console.log(error);
+                        $("#result").text(error);
                     }
-                })
+                });
+            });
+
+            $('#btnDelete').click(function() {
+                var id = $('#Id').val();
+
+                $.ajax({
+                    url: "https://localhost:7084/api/TodoItems/" + id, 
+                    type: "DELETE",
+                    dataType: "text",
+                    success: (data) => {
+                        $('#todoItem').val(data);
+                        
+                        getData();      // 재조회
+                    }
+                });
             });
         });
     </script>

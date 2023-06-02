@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "4BsFxvTTly7jhB3+b59reIZqtIajB7eR2X1cItZ680hIWk3HA8arVHGJ07alkcqkV0fsh8+wNqbRD5HOPj+jdw==",
+  "success": true,
+  "projectFilePath": "C:\\Source\\pknu_aspnet_2023\\Day10\\TodoItemSolution\\TodoItemApp\\TodoItemApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\mahapps.metro\\2.4.9\\mahapps.metro.2.4.9.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\mahapps.metro.iconpacks\\4.11.0\\mahapps.metro.iconpacks.4.11.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}
