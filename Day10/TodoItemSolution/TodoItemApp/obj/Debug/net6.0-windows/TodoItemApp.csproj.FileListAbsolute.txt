@@ -58,3 +58,6 @@ C:\Source\pknu_aspnet_2023\Day10\TodoItemSolution\TodoItemApp\bin\Debug\net6.0-w
 C:\Source\pknu_aspnet_2023\Day10\TodoItemSolution\TodoItemApp\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Zondicons.dll
 C:\Source\pknu_aspnet_2023\Day10\TodoItemSolution\TodoItemApp\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.dll
 C:\Source\pknu_aspnet_2023\Day10\TodoItemSolution\TodoItemApp\obj\Debug\net6.0-windows\App.baml
+C:\Source\pknu_aspnet_2023\Day10\TodoItemSolution\TodoItemApp\bin\Debug\net6.0-windows\System.Net.Http.Formatting.dll
+C:\Source\pknu_aspnet_2023\Day10\TodoItemSolution\TodoItemApp\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Source\pknu_aspnet_2023\Day10\TodoItemSolution\TodoItemApp\bin\Debug\net6.0-windows\Newtonsoft.Json.Bson.dll

@@ -14,7 +14,7 @@
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid Grid.Column="0" x:Name="GrdTodoItems" Margin="10" Background="Gainsboro"></DataGrid>
+        <DataGrid Grid.Column="0" x:Name="GrdTodoItems" Margin="10" Background="Gainsboro" SelectionChanged="GrdTodoItems_SelectionChanged"></DataGrid>
 
         <Grid Grid.Column="1" Margin="20">
             <Grid.RowDefinitions>
@@ -28,15 +28,16 @@
             <TextBox Grid.Row="0" x:Name="TxtId" mah:TextBoxHelper.AutoWatermark="True"
                      mah:TextBoxHelper.Watermark="Id" FontSize="14" Margin="5"/>
             <TextBox Grid.Row="1" x:Name="TxtTitle" mah:TextBoxHelper.AutoWatermark="True"
-                     mah:TextBoxHelper.Watermark="Id" FontSize="14" Margin="5"/>
+                     mah:TextBoxHelper.Watermark="Title" FontSize="14" Margin="5"/>
             <mah:DateTimePicker Grid.Row="2" x:Name="DtpTodoDate" mah:TextBoxHelper.AutoWatermark="True" 
                                 mah:TextBoxHelper.Watermark="TodoDate" FontSize="14" Margin="5" />
             <ComboBox Grid.Row="3" x:Name="CboIsComplete" FontSize="14" Margin="5"
                       mah:TextBoxHelper.AutoWatermark="True" mah:TextBoxHelper.Watermark="IsComplete" />
             <StackPanel Grid.Row="4" Orientation="Horizontal">
-                <Button x:Name="BtnInsert" Content="Insert" FontSize="14" Width="90" Margin= "1 10" />
-                <Button x:Name="BtnUpdate" Content="Update" FontSize="14" Width="90" Margin="1 10" />
-                <Button x:Name="BtnDelete" Content="Delete" FontSize="14" Width="90" Margin="1 10" />
+                <Button x:Name="BtnInsert" Content="Insert" FontSize="14" Margin= "1 10" Click="BtnInsert_Click" />
+                <Button x:Name="BtnUpdate" Content="Update" FontSize="14" Margin="1 10" Click="BtnUpdate_Click" />
+                <Button x:Name="BtnDelete" Content="Delete" FontSize="14" Margin="1 10" Click="BtnDelete_Click" />
+                <Button x:Name="BtnReload" Content="Reload" FontSize="14" Margin="1 10" Click="BtnReload_Click" />
             </StackPanel>
         </Grid>
     </Grid>
