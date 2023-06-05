@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+dongle-bold
+{
+    font-family : "Dongle";
+    font-weight : 400;
+}
+
+dongle-midle {
+    font-family: "dongle";
+    font-weight: 700;
+}
+
+dongle {
+    font-family: "dongle";
+    font-weight: 400;
+}

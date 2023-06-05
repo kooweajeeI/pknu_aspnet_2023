@@ -7,7 +7,13 @@ using System.Diagnostics;
 
 namespace aspnet02_boardapp.Controllers
 {
-    // https://localhost:7125/Board/Index
+    // https://
+    //
+    //
+    //
+    //
+    //
+    // :7125/Board/Index
     public class BoardController : Controller
     {
         private readonly ApplicationDbContext _db;
