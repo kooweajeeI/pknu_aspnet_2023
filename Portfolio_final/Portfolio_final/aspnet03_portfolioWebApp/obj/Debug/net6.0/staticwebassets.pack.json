@@ -29,6 +29,14 @@
       "PackagePath": "staticwebassets\\iot2.png"
     },
     {
+      "Id": "C:\\Source\\pknu_aspnet_2023\\Portfolio_final\\Portfolio_final\\aspnet03_portfolioWebApp\\wwwroot\\iot3.png",
+      "PackagePath": "staticwebassets\\iot3.png"
+    },
+    {
+      "Id": "C:\\Source\\pknu_aspnet_2023\\Portfolio_final\\Portfolio_final\\aspnet03_portfolioWebApp\\wwwroot\\iot4.png",
+      "PackagePath": "staticwebassets\\iot4.png"
+    },
+    {
       "Id": "C:\\Source\\pknu_aspnet_2023\\Portfolio_final\\Portfolio_final\\aspnet03_portfolioWebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -1437,8 +1445,16 @@
       "PackagePath": "staticwebassets\\themes\\Arsha\\portfolio-details.html"
     },
     {
+      "Id": "C:\\Source\\pknu_aspnet_2023\\Portfolio_final\\Portfolio_final\\aspnet03_portfolioWebApp\\wwwroot\\uploads\\10e03f6e-ef3c-41e2-af41-c0085d88a2bc_winforms05.PNG",
+      "PackagePath": "staticwebassets\\uploads\\10e03f6e-ef3c-41e2-af41-c0085d88a2bc_winforms05.PNG"
+    },
+    {
       "Id": "C:\\Source\\pknu_aspnet_2023\\Portfolio_final\\Portfolio_final\\aspnet03_portfolioWebApp\\wwwroot\\uploads\\17f09e9e-d1f7-4df3-ac3f-a3eda322f3b6_portfolio04.png",
       "PackagePath": "staticwebassets\\uploads\\17f09e9e-d1f7-4df3-ac3f-a3eda322f3b6_portfolio04.png"
+    },
+    {
+      "Id": "C:\\Source\\pknu_aspnet_2023\\Portfolio_final\\Portfolio_final\\aspnet03_portfolioWebApp\\wwwroot\\uploads\\1df9bab6-a154-4d26-815e-1f39669451a3_portfolio3.PNG",
+      "PackagePath": "staticwebassets\\uploads\\1df9bab6-a154-4d26-815e-1f39669451a3_portfolio3.PNG"
     },
     {
       "Id": "C:\\Source\\pknu_aspnet_2023\\Portfolio_final\\Portfolio_final\\aspnet03_portfolioWebApp\\wwwroot\\uploads\\36819378-be78-4f27-b316-5d5e68ba1ce8_Fake-smarthome.gif",
@@ -1451,6 +1467,18 @@
     {
       "Id": "C:\\Source\\pknu_aspnet_2023\\Portfolio_final\\Portfolio_final\\aspnet03_portfolioWebApp\\wwwroot\\uploads\\3db2b387-b201-4af9-a5b7-fd8a2cd86b5f_portfolio01.png",
       "PackagePath": "staticwebassets\\uploads\\3db2b387-b201-4af9-a5b7-fd8a2cd86b5f_portfolio01.png"
+    },
+    {
+      "Id": "C:\\Source\\pknu_aspnet_2023\\Portfolio_final\\Portfolio_final\\aspnet03_portfolioWebApp\\wwwroot\\uploads\\746d8edc-95a6-4ec9-9478-ea2c5ac1ad87_smarthome_monitor1.png",
+      "PackagePath": "staticwebassets\\uploads\\746d8edc-95a6-4ec9-9478-ea2c5ac1ad87_smarthome_monitor1.png"
+    },
+    {
+      "Id": "C:\\Source\\pknu_aspnet_2023\\Portfolio_final\\Portfolio_final\\aspnet03_portfolioWebApp\\wwwroot\\uploads\\83da556e-7ac8-47fd-895c-7a5551fa90ee_wpf01.png",
+      "PackagePath": "staticwebassets\\uploads\\83da556e-7ac8-47fd-895c-7a5551fa90ee_wpf01.png"
+    },
+    {
+      "Id": "C:\\Source\\pknu_aspnet_2023\\Portfolio_final\\Portfolio_final\\aspnet03_portfolioWebApp\\wwwroot\\uploads\\a53cc35e-6ce6-4978-92d5-a538ee0b5990_wpf02.png",
+      "PackagePath": "staticwebassets\\uploads\\a53cc35e-6ce6-4978-92d5-a538ee0b5990_wpf02.png"
     },
     {
       "Id": "C:\\Source\\pknu_aspnet_2023\\Portfolio_final\\Portfolio_final\\aspnet03_portfolioWebApp\\wwwroot\\uploads\\bf902ce4-66a6-4c9a-ad5e-49db8ebf92bc_portfolio05.png",

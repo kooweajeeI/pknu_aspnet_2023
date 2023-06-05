@@ -35,13 +35,14 @@
 
 <body>
     <!-- ***** Header Area Start ***** -->
-    <header id="header" class="fixed-top bg-dark">
+    <header id="header" class="fixed-top bg-black">
         <div class="container d-flex align-items-center">
 
             <h1 class="logo me-auto">
                 <a asp-action="Index" asp-controller="Home">
+                    <img src="~/iot4.png" alt="" />
                     Portfolio
-                    <img src="~/iot2.png" alt="" />
+                    <img src="~/iot3.png" alt="" />
                 </a>
             </h1>
             <!-- Uncomment below if you prefer to use an image logo -->
@@ -124,11 +125,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                        <h1>Lee Jaewook's profile</h1>
+                        @*<h1 style="color: burlywood">Lee Jaewook's profile</h1>*@
+                        <h1 style="color: bisque">Lee Jaewook's profile</h1>
+
                         <br>
-                        <h5 style="color: silver;">🏫 UC Information Technoloy Software Development major</h5>
-                        <h5 style="color: silver;">🎓 UOU Information Technology Fusion major</h5>
-                        <h5 style="color: silver;">🌱 PKNU Windows Platform IoT Developer Course</h5>
+                        <h5 style="color: lightpink;">🏫 UC Information Technoloy Software Development major</h5>
+                        <h5 style="color: gold;">🎓 UOU Information Technology Fusion major</h5>
+                        <h5 style="color: lightgreen;">🌱 PKNU Windows Platform IoT Developer Course</h5>
                         <div class="d-flex justify-content-center justify-content-lg-start">
                             <a href="#about" class="btn-get-started scrollto">Look Around</a>
                             @*<a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>*@

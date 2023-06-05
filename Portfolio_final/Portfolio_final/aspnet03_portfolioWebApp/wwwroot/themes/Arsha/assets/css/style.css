@@ -111,6 +111,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  background: #000;
 }
 
 #header.header-scrolled,
@@ -384,9 +385,9 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: 80vh;
-  background: #37517e;
+    width: 100%;
+    height: 80vh;
+    background: #000000
 }
 
 #hero .container {
@@ -407,19 +408,19 @@ h6 {
   font-size: 24px;
 }
 
-#hero .btn-get-started {
-  font-family: "Jost", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 28px 11px 28px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px 0 0 0;
-  color: #fff;
-  background: #47b2e4;
-}
+    #hero .btn-get-started {
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 10px 28px 11px 28px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin: 10px 0 0 0;
+        color: #fff;
+        background: rgb(72, 79, 160, 0.90);
+    }
 
 #hero .btn-get-started:hover {
   background: #209dd8;
